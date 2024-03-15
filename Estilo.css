@@ -1,0 +1,147 @@
+.icon{
+    border-radius: 50px;
+}
+
+main{
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items:center; /* Centra verticalmente */
+    height: 100vh; /* Esto centra el div en la ventana completa */
+    margin: 0;
+    background: url(img/fondobody.png);
+}
+
+.estiloEncriptador{
+    font-size: 20px;
+    text-align: center;
+    background-image: url(img/fondo.png);
+    color: white;
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    border-radius: 6px;
+    box-shadow: 10px 10px 60px black;
+}
+
+h1{
+    font-size: 2em;
+    padding-top: 50px;
+    text-align: center;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(83, 83, 83, 0.281);
+    background-image: linear-gradient(0deg, white, rgb(4, 99, 4), rgb(1, 1, 78));
+    }
+    
+@keyframes cambiaTexto {
+    0% { content: 'Encriptador de texto'; }
+    25% {content: 'Encriptador de textZ';}
+    35% { content: 'Encriptador de texLs'; }
+    50% { content: 'Encriptador de teVcx'; }
+    75% { content: 'Encriptador de texxp'; }
+    80% { content: 'Encriptador de texth'; }
+    100% { content: 'Encriptador de texto'; }
+    }
+
+
+      
+h1:hover::before{
+    animation: cambiaTexto 1s ease forwards;
+    transition:  cambiaTexto .6s;
+    }
+
+h1::before{
+    animation: cambioTexto 1s ease forwards;
+    content: 'Encriptador de texto'; 
+    unicode-range: U+0041-004D;
+}
+
+textarea{
+    display: block;
+    resize: none;
+    width: 350px;
+    margin: 30px;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.384);
+    color: white;
+    overflow-y: hidden;
+    transition: .6s;
+     
+}
+
+textarea::placeholder{
+    font-style: italic;
+
+}
+
+textarea:hover{
+    border-radius: 10px;
+    transition: .2s;
+}
+
+img{
+    width: 20%;
+    border-radius: 0 0 6px 6px;
+
+}
+
+.botones{
+    font-size: 25px;
+    border-radius: 10px;
+    background-color: rgb(4, 99, 4);
+    color: white;
+    transition: .8s;
+}
+
+.botones:hover{
+    background-color: rgb(0, 211, 0);
+    font-size: 28px;   
+    transition: .2s;
+    opacity: .8;
+    
+}
+
+#botonEncriptar{
+    margin-right: 40px;
+}
+
+.texto{
+    background-color: rgba(255, 255, 255, 0.836);
+    border-radius: 4px;
+}
+
+footer{
+    padding: 80px;
+    background: url(img/verde.png);
+    color: white;
+    text-align: center;
+}
+
+.icon{
+    width: 80px;
+    padding-bottom: 50px;
+}
+
+a img{
+    padding-top: 40px;
+    padding-left: 10px;
+    width: 50px;
+    transition: .8s;
+}
+
+a img:hover{
+    width: 54px;
+    transition: .2s;
+}
+
+
+
+
+@media screen and (max-width: 480px){
+    .estiloEncriptador{
+        width: auto;    
+        border-radius: 10px; 
+        box-shadow: 10px 10px 60px black;
+    }
+}
